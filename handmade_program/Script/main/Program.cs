@@ -1,4 +1,4 @@
-namespace handmade_program
+namespace handmade_program.Script.main
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace handmade_program
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new main_form());
         }
     }
 }

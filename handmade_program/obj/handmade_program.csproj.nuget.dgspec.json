@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\handmade_program\\handmade_program\\handmade_program.csproj": {}
+    "C:\\Users\\Admin\\Documents\\handmad_programs\\handmade_program\\handmade_program.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\handmade_program\\handmade_program\\handmade_program.csproj": {
+    "C:\\Users\\Admin\\Documents\\handmad_programs\\handmade_program\\handmade_program.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\handmade_program\\handmade_program\\handmade_program.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\handmad_programs\\handmade_program\\handmade_program.csproj",
         "projectName": "handmade_program",
-        "projectPath": "C:\\Users\\Admin\\Documents\\handmade_program\\handmade_program\\handmade_program.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\handmad_programs\\handmade_program\\handmade_program.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\handmade_program\\handmade_program\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\handmad_programs\\handmade_program\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
