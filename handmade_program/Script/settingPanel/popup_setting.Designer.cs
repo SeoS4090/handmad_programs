@@ -42,25 +42,28 @@
             OnTray.TabIndex = 0;
             OnTray.Text = "종료시 트레이로 이동";
             OnTray.UseVisualStyleBackColor = true;
+            OnTray.Checked = DataModelManager.instance.settingData.TrayOn;
             OnTray.CheckedChanged += OnTray_CheckedChanged;
             // 
             // popup_desc
             // 
-            popup_desc.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            popup_desc.Anchor = AnchorStyles.Bottom;
             popup_desc.AutoSize = true;
-            popup_desc.Location = new Point(10, 234);
+            popup_desc.Location = new Point(0, 219);
             popup_desc.Name = "popup_desc";
-            popup_desc.Size = new Size(250, 15);
+            popup_desc.Size = new Size(166, 30);
             popup_desc.TabIndex = 1;
-            popup_desc.Text = "팝업을 닫을 때 자동으로 세팅이 저장 됩니다.";
+            popup_desc.Text = "팝업을 닫을 때 \r\n자동으로 세팅이 저장 됩니다.";
+            popup_desc.TextAlign = ContentAlignment.BottomCenter;
             // 
             // Popup_Setting
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(272, 258);
+            ClientSize = new Size(171, 258);
             Controls.Add(popup_desc);
             Controls.Add(OnTray);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Popup_Setting";
             Text = "세팅";
             FormClosed += Popup_Setting_FormClosed;

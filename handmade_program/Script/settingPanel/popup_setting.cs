@@ -7,7 +7,7 @@
             InitializeComponent();
         }
 
-        private void OnTray_CheckedChanged(object sender, EventArgs e) 
+        private void OnTray_CheckedChanged(object sender, EventArgs e)
         {
             DataModelManager.instance.settingData.TrayOn = OnTray.Checked;
         }
