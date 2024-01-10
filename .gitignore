@@ -1,5 +1,6 @@
 # Visual Studio Code 및 Visual Studio의 설정 파일
 .vscode/
+.vs/
 *.suo
 *.user
 *.userosscache
