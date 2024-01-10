@@ -1,0 +1,54 @@
+# Visual Studio Code 및 Visual Studio의 설정 파일
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# bin 및 obj 디렉터리와 그 내부의 파일
+bin/
+obj/
+
+#Visual Studio의 IntelliCode 기능과 관련된 캐시 데이터를 저장하는 디렉터리
+FileContentIndex/
+
+# 프로젝트에서 생성된 캐시 및 개인 설정 파일
+*.log
+*.user
+*.userosscache
+*.suo
+*.cache
+*.nuget
+*.DotSettings
+[Tt]humbs.db
+*.dbmdl
+
+# 로그 및 예외 파일
+*.log
+*.log.xml
+*.log.html
+*.log.json
+*.dmp
+
+# JetBrains Rider IDE 파일 및 폴더
+.idea/
+
+# Resharper 설정 파일
+_ReSharper*/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on
