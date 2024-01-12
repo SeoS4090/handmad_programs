@@ -33,6 +33,8 @@
             toolbar = new MenuStrip();
             toolbar_File = new ToolStripMenuItem();
             Toolbar_Option = new ToolStripMenuItem();
+            toolbar_fuction = new ToolStripMenuItem();
+            TermBuild = new ToolStripMenuItem();
             toolbar_help = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
             notification = new NotifyIcon(components);
@@ -46,7 +48,8 @@
             // toolbar
             // 
             resources.ApplyResources(toolbar, "toolbar");
-            toolbar.Items.AddRange(new ToolStripItem[] { toolbar_File, toolbar_help });
+            toolbar.GripMargin = new Padding(0);
+            toolbar.Items.AddRange(new ToolStripItem[] { toolbar_File, toolbar_fuction, toolbar_help });
             toolbar.Name = "toolbar";
             // 
             // toolbar_File
@@ -60,6 +63,18 @@
             resources.ApplyResources(Toolbar_Option, "Toolbar_Option");
             Toolbar_Option.Name = "Toolbar_Option";
             Toolbar_Option.Click += Toolbar_Option_Click;
+            // 
+            // toolbar_fuction
+            // 
+            resources.ApplyResources(toolbar_fuction, "toolbar_fuction");
+            toolbar_fuction.DropDownItems.AddRange(new ToolStripItem[] { TermBuild });
+            toolbar_fuction.Name = "toolbar_fuction";
+            // 
+            // TermBuild
+            // 
+            resources.ApplyResources(TermBuild, "TermBuild");
+            TermBuild.Name = "TermBuild";
+            TermBuild.Click += TermBuild_Click;
             // 
             // toolbar_help
             // 
@@ -123,5 +138,7 @@
         private ToolStripMenuItem Exit;
         private ToolStripMenuItem toolbar_File;
         private ToolStripMenuItem Toolbar_Option;
+        private ToolStripMenuItem toolbar_fuction;
+        private ToolStripMenuItem TermBuild;
     }
 }

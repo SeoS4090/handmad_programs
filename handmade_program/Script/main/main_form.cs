@@ -1,3 +1,4 @@
+using CustomTool;
 using handmade_program.Script.settingPanel;
 
 namespace handmade_program
@@ -5,6 +6,7 @@ namespace handmade_program
     public partial class main_form : Form
     {
         public Popup_Setting popup_setting = null;
+        public TermBuild popup_termBuild = null;
 
         public main_form()
         {
@@ -65,6 +67,18 @@ namespace handmade_program
             }
 
             popup_setting.Show();
+        }
+
+        private void TermBuild_Click(object sender, EventArgs e)
+        {
+            if (popup_termBuild is null)
+            {
+                popup_termBuild = new TermBuild();
+                this.AddOwnedForm(popup_termBuild);
+                popup_termBuild.FormClosed += (sender, e) => { popup_termBuild = null; this.Show(); };
+            }
+            this.Hide();
+            popup_termBuild.Show();
         }
     }
 }

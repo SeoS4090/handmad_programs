@@ -1,9 +1,12 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="handmade_program.Script.main" GeneratedClassName="dataSettings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="handmade_program.Script.settingPanel" GeneratedClassName="dataSettings">
   <Profiles />
   <Settings>
     <Setting Name="settingData" Type="System.String" Scope="User">
       <Value Profile="(Default)">{"Init":true,"TrayOn":true}</Value>
+    </Setting>
+    <Setting Name="TermSetting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{"sheet_name_LanguageList" : "Languages","Term_Save_Path" :"","Term_Load_Path " :"","Term_Load_FileName" :""}</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -34,5 +34,18 @@ namespace handmade_program.Script.settingPanel {
                 this["settingData"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("{\"sheet_name_LanguageList\" : \"Languages\",\"Term_Save_Path\" :\"\",\"Term_Load_Path \" :" +
+            "\"\",\"Term_Load_FileName\" :\"\"}")]
+        public string TermSetting {
+            get {
+                return ((string)(this["TermSetting"]));
+            }
+            set {
+                this["TermSetting"] = value;
+            }
+        }
     }
 }
